@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "priortiy": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "googlesyndication",
+            "resourceTypes":["xmlhttprequest"]
+        }
+    },
+
+    {
+        "id": 2,
+        "priortiy": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "googleadservices",
+            "resourceTypes":["xmlhttprequest"]
+        }
+    },
+
+    {
+        "id": 3,
+        "priortiy": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "advertising.amazon.com",
+            "resourceTypes":["xmlhttprequest"]
+        }
+    },
+
+    {
+        "id": 4,
+        "priortiy": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "dobleclick",
+            "resourceTypes":["xmlhttprequest"]
+        }
+    },
+    {
+        "id": 5,
+        "priortiy": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "advertising.amazon.com",
+            "resourceTypes":["xmlhttprequest"]
+        }
+    }
+]

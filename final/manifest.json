@@ -1,0 +1,34 @@
+{
+    "name": "ad blocker",
+    "description": "a twitch.tv ad blocker",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "declarativeNetRequest",
+        "activeTab",
+        "tabs",
+        "storage",
+        "scripting"
+    ],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rule.json"
+            }
+        ]
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }
+    ]
+}
